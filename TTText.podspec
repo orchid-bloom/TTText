@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
 
   spec.author       = { "tema.tian" => "temagsoft@163.com" }
 
-  spec.source       = { :git => "https://github.com/temagit/TTText.git", :branch => 'master' }
+  spec.source       = { :git => "https://github.com/temagit/TTText.git", :tag => s.version }
 
   spec.platform     = :ios, "9.0"
 	
@@ -24,5 +24,6 @@ Pod::Spec.new do |spec|
 
   spec.source_files = "Classes", "Classes/*.swift"
 	
+	spec.swift_version = '>= 5.0'
 
 end
