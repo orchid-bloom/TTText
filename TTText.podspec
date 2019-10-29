@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
 
   spec.author       = { "tema.tian" => "temagsoft@163.com" }
 
-  spec.source       = { :git => "https://github.com/temagit/TTText.git", :tag => spec.version }
+  spec.source       = { :git => "https://github.com/temagit/TTText.git", :tag => "#{spec.version}" }
 
   spec.platform     = :ios, "9.0"
 	
