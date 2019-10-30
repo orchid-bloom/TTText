@@ -1,6 +1,11 @@
 # TTText
 
 Swift 5 string interpolation - NSAttributedString
+
+
+ ![an image](./Resource/pikachu.png) 
+
+
 ## CocoaPods
 
 CocoaPods is a dependency manager for Cocoa projects. You can install it with the following command:
