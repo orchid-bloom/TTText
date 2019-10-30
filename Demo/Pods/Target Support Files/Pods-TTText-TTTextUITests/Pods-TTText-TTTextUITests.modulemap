@@ -1,0 +1,6 @@
+framework module Pods_TTText_TTTextUITests {
+  umbrella header "Pods-TTText-TTTextUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

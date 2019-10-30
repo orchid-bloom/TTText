@@ -1,0 +1,6 @@
+framework module TTText {
+  umbrella header "TTText-umbrella.h"
+
+  export *
+  module * { export * }
+}

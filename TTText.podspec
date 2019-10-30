@@ -4,7 +4,7 @@ Pod::Spec.new do |spec|
 
   spec.name         = "TTText"
 	
-  spec.version      = "0.0.3"
+  spec.version      = "1.0.0"
 	
   spec.summary      = "Swift 5 string interpolation - NSAttributedString"
 
