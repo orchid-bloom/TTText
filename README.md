@@ -27,14 +27,14 @@ pod install
 ## Example
 
 
-    let username = "Simth"
+    let username = "Tema.Tian"
     
     let str: TTText = """
     Hello \(username, .color(.red)), isn't this \("cool", .color(.blue), .oblique, .underline(.purple, .single))?
     
     \(wrap: """
-    \(" Merry Xmas! ", .font(.systemFont(ofSize: 36)), .color(.red), .bgColor(.yellow))
-    \(image: #imageLiteral(resourceName: "pikachu") )
+    \(" Pikachu! ", .font(.systemFont(ofSize: 36)), .color(.red), .bgColor(.yellow))
+    \(image: #imageLiteral(resourceName: "pikachu"))
     """, .alignment(.center))
     
     Go there to \("learn more about String Interpolation", .link("https://github.com/apple/swift-evolution/blob/master/proposals/0228-fix-expressiblebystringinterpolation.md"), .underline(.blue, .single))!
