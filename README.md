@@ -8,11 +8,11 @@ CocoaPods is a dependency manager for Cocoa projects. You can install it with th
 ```
 $ gem install cocoapods
 ```
-To integrate SwiftGCD into your Xcode project using CocoaPods, specify it in your Podfile:
+To integrate TTText into your Xcode project using CocoaPods, specify it in your Podfile:
 
 ```
 source 'https://github.com/CocoaPods/Specs.git'
-platform :ios, '8.0'
+platform :ios, '9.0'
 use_frameworks!
 
 target '<Your Target Name>' do
@@ -27,7 +27,7 @@ pod install
 ## Example
 
 
-        let username = "Simth"
+    let username = "Simth"
     
     let str: TTText = """
     Hello \(username, .color(.red)), isn't this \("cool", .color(.blue), .oblique, .underline(.purple, .single))?
