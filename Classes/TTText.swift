@@ -8,6 +8,10 @@
 
 import UIKit
 
+public func attributedText(_ text: TTText) -> NSAttributedString {
+  text.attributedString
+}
+
 public struct TTText {
   public let attributedString: NSAttributedString
 }
