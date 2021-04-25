@@ -119,6 +119,7 @@ extension TTText {
       let paraStyle = NSMutableParagraphStyle()
       paraStyle.minimumLineHeight = lineHeight
       paraStyle.maximumLineHeight = lineHeight
+      paraStyle.lineBreakMode = .byTruncatingTail
       let baselineOffset = (lineHeight - font.lineHeight) / 4;
       return Style(attributes: [.paragraphStyle : paraStyle,
                                 .baselineOffset : baselineOffset])
@@ -127,15 +128,16 @@ extension TTText {
     public static let oblique = Style(attributes: [.obliqueness: 0.1])
     public static func deleteline (_ color: UIColor, _ style: NSUnderlineStyle) -> Style {
       return Style(attributes: [
-        .strikethroughStyle: style,
-        .strikethroughColor: color
-        ])
+        .strikethroughStyle: NSNumber(value: style.rawValue),
+        .strikethroughColor: color,
+        .baselineOffset: NSNumber(0)
+      ])
     }
     public static func underline(_ color: UIColor, _ style: NSUnderlineStyle) -> Style {
       return Style(attributes: [
         .underlineColor: color,
         .underlineStyle: style.rawValue
-        ])
+      ])
     }
     /*
      The stroke color will take effect with a non-zero stroke width. If only the stroke color is set, the stroke width is 0, there is no stroke effect.
@@ -146,19 +148,19 @@ extension TTText {
       return Style(attributes: [
         .strokeColor: color,
         .strokeWidth: width
-        ])
+      ])
     }
     //Positive value offset upward, negative value downward offset, default 0
     public static func lineOffset(_ offset: CGFloat) -> Style {
       return Style(attributes: [
         .baselineOffset: offset
-        ])
+      ])
     }
     //Flattened positive lateral stretch, negative lateral compression, default 0 (no stretch)
     public static func expansion(_ expansion: CGFloat) -> Style {
       return Style(attributes: [
         .expansion: expansion
-        ])
+      ])
     }
     public static func alignment(_ alignment: NSTextAlignment) -> Style {
       let ps = NSMutableParagraphStyle()
