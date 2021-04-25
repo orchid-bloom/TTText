@@ -12,7 +12,7 @@ Pod::Spec.new do |spec|
 
   spec.homepage     = "https://github.com/orchid-bloom/TTText.git"
 
-  spec.license      = { :type => "MIT" }
+  spec.license      = { :type => "MIT", :file => "LICENSE" }
 
   spec.author       = { "tema.tian" => "temagsoft@163.com" }
 
