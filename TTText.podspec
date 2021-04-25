@@ -18,6 +18,8 @@ Pod::Spec.new do |spec|
 
   spec.source       = { :git => "https://github.com/orchid-bloom/TTText.git", :tag => "#{spec.version}" }
 
+  spec.swift_versions = ['5.0']
+
   spec.platform     = :ios, "10.0"
 	
   spec.ios.deployment_target = '10.0'
