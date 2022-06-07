@@ -127,11 +127,11 @@ extension TTText {
       return Style(attributes: [.paragraphStyle: paraStyle])
     }
 
-    public static func paragraph(_ lineHeight: CGFloat, _ font: UIFont) -> Style {
+    public static func paragraph(_ lineHeight: CGFloat, _ font: UIFont, _ lineBreakMode: NSLineBreakMode = .byTruncatingTail) -> Style {
       let paraStyle = NSMutableParagraphStyle()
       paraStyle.minimumLineHeight = lineHeight
       paraStyle.maximumLineHeight = lineHeight
-      paraStyle.lineBreakMode = .byTruncatingTail
+      paraStyle.lineBreakMode = lineBreakMode
       let baselineOffset = (lineHeight - font.lineHeight) / 4
       return Style(attributes: [.paragraphStyle: paraStyle,
                                 .baselineOffset: baselineOffset])
