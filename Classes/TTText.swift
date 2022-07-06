@@ -185,5 +185,9 @@ extension TTText {
       ps.alignment = alignment
       return Style(attributes: [.paragraphStyle: ps])
     }
+      
+    public static func shadow(_ shadow: NSShadow) -> Style {
+      return Style(attributes: [.shadow: shadow])
+    }
   }
 }
